@@ -13,6 +13,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
     }
-
+    // Definindo botãos
     final Button btn= (Button) findViewById(R.id.button_start);
 }
