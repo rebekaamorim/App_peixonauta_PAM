@@ -21,7 +21,7 @@
         tools:ignore="ContentDescription,HardcodedText" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/nome"
         android:layout_width="299dp"
         android:layout_height="70dp"
         android:backgroundTint="@color/azul_pastel"
