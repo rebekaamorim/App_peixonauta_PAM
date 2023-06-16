@@ -13,8 +13,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         btnstart= (Button) findViewById(R.id.button_start);
         txt= (EditText) findViewById(R.id.nome);
+
         btnstart.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {

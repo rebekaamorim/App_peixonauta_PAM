@@ -4,19 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Lista_de_historias">
+    tools:context=".Lista_de_historias"
+    android:background = "@drawable/tela2">
 
-    <FrameLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+
+    <TextView
+        android:id="@+id/idhistorinhas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fredoka_one"
+        android:text="@string/text_historinhas"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints,UselessLeaf">
+        app:layout_constraintVertical_bias="0.023" />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/tela2" />
-    </FrameLayout>
+    <ImageButton
+        android:id="@+id/historia1"
+        android:layout_width="303dp"
+        android:layout_height="476dp"
+        android:backgroundTint="#77B809"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384"
+        app:srcCompat="@drawable/hq1" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
