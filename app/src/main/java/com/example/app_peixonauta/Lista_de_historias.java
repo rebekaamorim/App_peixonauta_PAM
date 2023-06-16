@@ -12,3 +12,4 @@ public class Lista_de_historias extends AppCompatActivity {
         setContentView(R.layout.activity_lista_de_historias);
     }
 }
+
