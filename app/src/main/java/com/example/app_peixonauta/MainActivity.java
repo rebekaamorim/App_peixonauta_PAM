@@ -13,7 +13,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btn
+        btn.setOnClickListener(new View.OnClickListener(){
+           @Overridd
+           public void OnClick(View v){
+             Intent tela1 = New Intent(MainActivity.this), MainActivity.class);
+
+           StartActivity (tela2)
+            
+          }
+        });
+
+    }
+
 
     }
     // Definindo botãos
