@@ -15,4 +15,6 @@ public class MainActivity extends AppCompatActivity {
     }
     // Definindo botãos
     final Button btn= (Button) findViewById(R.id.button_start);
+    //Verificar nome do id
+    final EditText txt= (EditText) findViewById(R.id.nome);
 }
