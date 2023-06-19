@@ -4,15 +4,140 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fundo1"
     tools:context=".tela3_historia">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+
+    <ScrollView
+        android:layout_width="410dp"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/scroll"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fundo1" />
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="386dp"
+            android:layout_height="600dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.454"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="613dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.135"
+                app:srcCompat="@drawable/parte1" />
+
+            <ImageView
+                android:id="@+id/parte2"
+                android:layout_width="wrap_content"
+                android:layout_height="613dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.135"
+                app:srcCompat="@drawable/part2" />
+
+            <ImageView
+                android:id="@+id/parte3"
+                android:layout_width="wrap_content"
+                android:layout_height="613dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.135"
+                app:srcCompat="@drawable/parte3" />
+
+            <ImageView
+                android:id="@+id/parte4"
+                android:layout_width="wrap_content"
+                android:layout_height="613dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.135"
+                app:srcCompat="@drawable/parte4" />
+
+            <ImageView
+                android:id="@+id/parte5"
+                android:layout_width="wrap_content"
+                android:layout_height="613dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.135"
+                app:srcCompat="@drawable/parte5" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <ImageButton
+                android:id="@+id/btn_play"
+                android:layout_width="91dp"
+                android:layout_height="78dp"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.949"
+                app:srcCompat="@drawable/play"
+                android:contentDescription="botão de começar"/>
+
+            <ImageButton
+                android:id="@+id/btn_avancar"
+                android:layout_width="99dp"
+                android:layout_height="92dp"
+                android:backgroundTint="@android:color/transparent"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.881"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.948"
+                app:srcCompat="@drawable/setaof"
+                android:contentDescription="botão de próximo"/>
+
+            <ImageButton
+                android:id="@+id/btn_voltar"
+                android:layout_width="99dp"
+                android:layout_height="92dp"
+                android:backgroundTint="@android:color/transparent"
+                android:rotationY="-180"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.121"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.948"
+                app:srcCompat="@drawable/setaof"
+                android:contentDescription="botão de voltar"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

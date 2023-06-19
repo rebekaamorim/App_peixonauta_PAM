@@ -24,15 +24,16 @@
 
     <ImageButton
         android:id="@+id/historia1"
-        android:layout_width="303dp"
-        android:layout_height="476dp"
-        android:backgroundTint="#77B809"
+        android:layout_width="330dp"
+        android:layout_height="539dp"
+        android:backgroundTint="@android:color/transparent"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.384"
+        app:layout_constraintVertical_bias="0.556"
         app:srcCompat="@drawable/hq1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
