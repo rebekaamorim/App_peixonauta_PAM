@@ -11,5 +11,8 @@
     <string name="text_dica3">Use a água de forma consciente!</string>
     <string name="btn_sair">Sair</string>
     <string name="scroll">Rolar histórias</string>
+    <string name="historia1">Histórinha em quadrinhos</string>
+    <string name="botaovoltar">Botão para voltar á pagina menu</string>
+    <string name="botaoproximo">Botão para ir à próxima página</string>
 </resources>
 

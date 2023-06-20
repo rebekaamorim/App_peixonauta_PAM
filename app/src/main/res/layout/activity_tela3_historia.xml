@@ -31,113 +31,119 @@
             app:layout_constraintVertical_bias="0.0"
             android:layout_margin="10dp">
 
-            <ImageView
-                android:id="@+id/imageView2"
+            <ImageButton
+                android:id="@+id/parte1"
                 android:layout_width="wrap_content"
                 android:layout_height="613dp"
+                android:backgroundTint="@android:color/transparent"
+                android:contentDescription="@string/historia1"
+                android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.135"
-                app:srcCompat="@drawable/parte1" />
+                app:srcCompat="@drawable/parte1"
+                tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/parte2"
                 android:layout_width="wrap_content"
                 android:layout_height="613dp"
+                android:backgroundTint="@android:color/transparent"
+                android:contentDescription="@string/historia1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.135"
-                app:srcCompat="@drawable/part2" />
+                app:srcCompat="@drawable/part2"
+                tools:ignore="ImageContrastCheck"
+                android:scaleType="fitCenter"/>
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/parte3"
                 android:layout_width="wrap_content"
                 android:layout_height="613dp"
+                android:backgroundTint="@android:color/transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.135"
-                app:srcCompat="@drawable/parte3" />
+                app:srcCompat="@drawable/parte3"
+                android:contentDescription="@string/historia1"
+                android:scaleType="fitCenter"/>
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/parte4"
                 android:layout_width="wrap_content"
                 android:layout_height="613dp"
+                android:backgroundTint="@android:color/transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.135"
-                app:srcCompat="@drawable/parte4" />
+                app:srcCompat="@drawable/parte4"
+                android:contentDescription="@string/historia1"
+                android:scaleType="fitCenter"/>
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/parte5"
                 android:layout_width="wrap_content"
                 android:layout_height="613dp"
+                android:backgroundTint="@android:color/transparent"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.135"
-                app:srcCompat="@drawable/parte5" />
+                app:srcCompat="@drawable/parte5"
+                android:contentDescription="@string/historia1"
+                android:scaleType="fitCenter"/>
 
 
         </LinearLayout>
     </ScrollView>
+
     <ImageButton
-                android:id="@+id/btn_play"
-                android:layout_width="91dp"
-                android:layout_height="78dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.949"
-                app:srcCompat="@drawable/play"
-                android:contentDescription="botão de começar"/>
+        android:id="@+id/btn_avancar"
+        android:layout_width="99dp"
+        android:layout_height="92dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/botaoproximo"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.881"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        app:srcCompat="@drawable/setaof"
+        tools:ignore="ImageContrastCheck" />
 
-            <ImageButton
-                android:id="@+id/btn_avancar"
-                android:layout_width="99dp"
-                android:layout_height="92dp"
-                android:backgroundTint="@android:color/transparent"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.881"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.948"
-                app:srcCompat="@drawable/setaof"
-                android:contentDescription="botão de próximo"/>
-
-            <ImageButton
-                android:id="@+id/btn_voltar"
-                android:layout_width="99dp"
-                android:layout_height="92dp"
-                android:backgroundTint="@android:color/transparent"
-                android:rotationY="-180"
-                android:scaleType="fitCenter"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.121"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.948"
-                app:srcCompat="@drawable/setaof"
-                android:contentDescription="botão de voltar"/>
+    <ImageButton
+        android:id="@+id/btn_voltar"
+        android:layout_width="99dp"
+        android:layout_height="92dp"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/botao_voltar"
+        android:rotationY="-180"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948"
+        app:srcCompat="@drawable/setaof"
+        tools:ignore="ImageContrastCheck" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
