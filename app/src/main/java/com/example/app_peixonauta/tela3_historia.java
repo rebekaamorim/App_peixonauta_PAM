@@ -26,9 +26,9 @@ public class tela3_historia extends AppCompatActivity {
         btnproximo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
-                Intent in = new Intent (tela3_historia.this, tela_curiosidades.class);
+                Intent intent = new Intent (tela3_historia.this, tela_curiosidades.class);
 
-                startActivity (in);
+                startActivity (intent);
             }
 
         });
