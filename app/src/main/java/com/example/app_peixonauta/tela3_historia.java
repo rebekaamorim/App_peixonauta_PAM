@@ -26,7 +26,7 @@ public class tela3_historia extends AppCompatActivity {
         btnproximo.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
-                Intent in = new Intent (tela3_historia.this, curiosidades.class);
+                Intent in = new Intent (tela3_historia.this, tela_curiosidades.class);
 
                 startActivity (in);
             }
@@ -60,6 +60,6 @@ public class tela3_historia extends AppCompatActivity {
   ImageButton his1;
   ImageButton his2;
   ImageButton his3;
-  ImageView his4;
+  ImageButton his4;
   ImageButton his5;
 }
