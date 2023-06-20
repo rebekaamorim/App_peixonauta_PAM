@@ -52,6 +52,6 @@ public class tela3_historia extends AppCompatActivity {
   ImageButton his1;
   ImageButton his2;
   ImageButton his3;
-  ImageView his4;
+  ImageButton his4;
   ImageButton his5;
 }
