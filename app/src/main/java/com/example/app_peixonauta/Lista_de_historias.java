@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 
 public class Lista_de_historias extends AppCompatActivity {
 
@@ -16,20 +15,18 @@ public class Lista_de_historias extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_de_historias);
 
-        avancar = (ImageButton) findViewById(R.id.historia1);
+        ImageButton btnavancar;
+        btnavancar = (ImageButton) findViewById(R.id.historia1);
 
-        avancar.setOnClickListener(new View.OnClickListener(){
+        btnavancar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick (View v) {
-                Intent in = new Intent (Lista_de_historias.this, tela3_historia.class);
+            public void onClick(View v) {
+                Intent in = new Intent(Lista_de_historias.this, tela3_historia.class);
 
-                startActivity (in);
+                startActivity(in);
             }
 
         });
-
     }
 
-   ImageButton avancar;
-
-}
+    }
