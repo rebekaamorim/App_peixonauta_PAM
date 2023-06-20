@@ -22,7 +22,7 @@ his5 = (ImageButton)findViewById(R.id.parte5)
 btnvoltar.setOnClickListener(New View.OnClickListener(){
            @override
            public void OnClick (View v)
-           Intent in = new Intent (tela3_historia.this, Lista_com_historias.class);
+           Intent in = new Intent (tela3_historia.this, Lista_de_historias.class);
 
            startActivity (in);
        });
