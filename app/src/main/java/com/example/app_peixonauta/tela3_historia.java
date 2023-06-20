@@ -43,16 +43,7 @@ public class tela3_historia extends AppCompatActivity {
 
         });
 
-        //continuar ajeitando os botãos de histtória
-        his1.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick (View v) {
-                Intent in = new Intent (MainActivity.this, Lista_de_historias.class);
-
-                startActivity (in);
-            }
-
-        });
+        //continuar ajeitando os botãos de história
 
     }
   ImageButton btnproximo;
