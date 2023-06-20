@@ -2,7 +2,11 @@ package com.example.app_peixonauta;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class tela3_historia extends AppCompatActivity {
 
@@ -11,37 +15,51 @@ public class tela3_historia extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela3_historia);
 
-btnproximo = (ImageButton)findViewById(R.id.btn_avancar)
-btnvoltar = (ImageButton)findViewById(R.id.btn_voltar)
-his1 = (ImageButton)findViewById(R.id.parte1)
-his2 = (ImageButton)findViewById(R.id.parte2)
-his3 = (ImageButton)findViewById(R.id.parte3)
-his4 = (ImageButton)findViewById(R.id.parte4)
-his5 = (ImageButton)findViewById(R.id.parte5)
+        btnproximo = (ImageButton)findViewById(R.id.btn_avancar);
+        btnvoltar = (ImageButton)findViewById(R.id.btn_voltar);
+        his1 = (ImageButton) findViewById(R.id.parte1);
+        his2 = (ImageButton) findViewById(R.id.parte2);
+        his3 = (ImageButton) findViewById(R.id.parte3);
+        his4 = (ImageButton) findViewById(R.id.parte4);
+        his5 = (ImageButton) findViewById(R.id.parte5);
 
-btnvoltar.setOnClickListener(New View.OnClickListener(){
-           @override
-           public void OnClick (View v)
-           Intent in = new Intent (tela3_historia.this, Lista_de_historias.class);
+        btnproximo.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                Intent in = new Intent (tela3_historia.this, curiosidades.class);
 
-           startActivity (in);
-       });
+                startActivity (in);
+            }
 
-btnproximo.setOnClickListener(New View.OnClickListener(){
+        });
 
-           @override
-           public void OnClick (View v)
-           Intent in = new Intent (Tela_historia.this, Tela_com_estrelas.class);
+        btnvoltar.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                Intent in = new Intent (tela3_historia.this, Lista_de_historias.class);
 
-           startActivity (in);
-});
+                startActivity (in);
+            }
+
+        });
+
+        //continuar ajeitando os botãos de histtória
+        his1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                Intent in = new Intent (MainActivity.this, Lista_de_historias.class);
+
+                startActivity (in);
+            }
+
+        });
 
     }
-  ImageButton btnproximo
-  ImageButton btnvoltar
-  ImageButton his1
-  ImageButton his2
-  ImageButton his3
-  ImageButton his4
-  ImageButton his5
+  ImageButton btnproximo;
+  ImageButton btnvoltar;
+  ImageButton his1;
+  ImageButton his2;
+  ImageButton his3;
+  ImageView his4;
+  ImageButton his5;
 }

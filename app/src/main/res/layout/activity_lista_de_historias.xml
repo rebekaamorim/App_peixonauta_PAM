@@ -27,6 +27,7 @@
         android:layout_width="330dp"
         android:layout_height="539dp"
         android:backgroundTint="@android:color/transparent"
+        android:contentDescription="@string/historia1"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,6 +35,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.556"
-        app:srcCompat="@drawable/hq1" />
+        app:srcCompat="@drawable/hq1"
+        tools:ignore="ImageContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
