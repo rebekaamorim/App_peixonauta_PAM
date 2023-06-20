@@ -12,31 +12,32 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/fundo2" />
 
     <TextView
         android:id="@+id/poupeagua"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="279dp"
+        android:layout_height="56dp"
         android:fontFamily="@font/fredoka_one"
         android:text="@string/text_poupeagua"
         android:textColor="#FFFFFF"
-        android:textSize="48sp"
+        android:textSize="45sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <Button
         android:id="@+id/button_voltar"
         android:layout_width="210dp"
         android:layout_height="72dp"
         android:backgroundTint="#FF9800"
+        android:fontFamily="@font/fredoka_one"
         android:text="@string/botao_voltar"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
@@ -49,8 +50,8 @@
 
     <TextView
         android:id="@+id/dica1"
-        android:layout_width="288dp"
-        android:layout_height="71dp"
+        android:layout_width="299dp"
+        android:layout_height="86dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/fredoka_one"
         android:text="@string/text_dica1"
@@ -59,15 +60,15 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintHorizontal_bias="0.857"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintVertical_bias="0.144" />
 
     <TextView
         android:id="@+id/dica2"
-        android:layout_width="312dp"
-        android:layout_height="76dp"
+        android:layout_width="291dp"
+        android:layout_height="63dp"
         android:layout_marginEnd="6dp"
         android:fontFamily="@font/fredoka_one"
         android:text="@string/text_dica2"
@@ -75,23 +76,24 @@
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.329" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <TextView
         android:id="@+id/dica3"
-        android:layout_width="282dp"
-        android:layout_height="86dp"
+        android:layout_width="265dp"
+        android:layout_height="62dp"
         android:layout_marginEnd="8dp"
+        android:fontFamily="@font/fredoka_one"
         android:text="@string/text_dica3"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.728"
+        app:layout_constraintHorizontal_bias="0.695"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.488" />
+        app:layout_constraintVertical_bias="0.478" />
 </androidx.constraintlayout.widget.ConstraintLayout>

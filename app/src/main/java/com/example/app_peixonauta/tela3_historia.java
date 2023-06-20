@@ -43,7 +43,7 @@ public class tela3_historia extends AppCompatActivity {
 
         });
 
-        //continuar ajeitando os botãos de histtória
+        //continuar ajeitando os botãos de história
 
 
     }

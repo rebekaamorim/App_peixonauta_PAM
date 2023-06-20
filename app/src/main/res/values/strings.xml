@@ -4,7 +4,7 @@
     <string name="botao_start">Play</string>
     <string name="text_boasvindas">Bem vindo(a)!</string>
     <string name="text_historinhas">Historinhas</string>
-    <string name="text_poupeagua">Poupe Água</string>
+    <string name="text_poupeagua">Poupe Água!</string>
     <string name="botao_voltar">Voltar</string>
     <string name="text_dica1">Feche a torneira enquanto escova os dentes!</string>
     <string name="text_dica2">Fique menos tempo no chuveiro!</string>
@@ -16,5 +16,6 @@
     <string name="text_curi2">Um banho de 15 minutos gasta cerca de 120 litros!</string>
     <string name="text_curi3">40% da água do Brasil é desperdiçada!</string>
     <string name="btn_proximo">Próximo</string>
+    <string name="historia1">Histórinha numero 1</string>
 </resources>
 
