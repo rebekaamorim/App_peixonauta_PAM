@@ -36,15 +36,23 @@ public class tela3_historia extends AppCompatActivity {
         btnvoltar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
-                Intent in2 = new Intent (tela3_historia.this, Lista_de_historias.class);
+                Intent in = new Intent (tela3_historia.this, Lista_de_historias.class);
 
-                startActivity (in2);
+                startActivity (in);
             }
 
         });
 
-        //continuar ajeitando os botãos de história
+        //continuar ajeitando os botãos de histtória
+        his1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+                Intent in = new Intent (MainActivity.this, Lista_de_historias.class);
 
+                startActivity (in);
+            }
+
+        });
 
     }
   ImageButton btnproximo;
