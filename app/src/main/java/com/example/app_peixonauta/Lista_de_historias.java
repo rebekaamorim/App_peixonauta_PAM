@@ -11,7 +11,7 @@ public class Lista_de_historias extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_de_historias);
 
-avancar = (Button)findViewById(R.id.)
+avancar = (Button)findViewById(R.id.historia1)
 
 avancar.setOnClickListener(New View.OnClickListener(){
 
