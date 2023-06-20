@@ -25,7 +25,17 @@ btnvoltar.setOnClickListener(New View.OnClickListener(){
            Intent in = new Intent (tela3_historia.this, Tela_com_historias.class);
 
            startActivity (in);
-       }
+       });
+
+btnproximo.setOnClickListener(New View.OnClickListener(){
+
+           @override
+           public void OnClick (View v)
+           Intent in = new Intent (Tela_historia.this, Tela_com_estrelas.class);
+
+           startActivity (in);
+});
+
     }
   ImageButton btnproximo
   ImageButton btnvoltar
