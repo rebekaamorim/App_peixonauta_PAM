@@ -29,4 +29,4 @@ public class Lista_de_historias extends AppCompatActivity {
         });
     }
 
-    }
+}
