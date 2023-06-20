@@ -11,5 +11,10 @@
     <string name="text_dica3">Use a água de forma consciente!</string>
     <string name="btn_sair">Sair</string>
     <string name="scroll">Rolar histórias</string>
+    <string name="text_vocesabia">Você Sabia?</string>
+    <string name="text_curi1">Apenas 0,77% da água do mundo está disponível para o consumo humano.</string>
+    <string name="text_curi2">Um banho de 15 minutos gasta cerca de 120 litros!</string>
+    <string name="text_curi3">40% da água do Brasil é desperdiçada!</string>
+    <string name="btn_proximo">Próximo</string>
 </resources>
 

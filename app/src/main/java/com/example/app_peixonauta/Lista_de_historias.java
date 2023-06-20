@@ -13,7 +13,7 @@ public class Lista_de_historias extends AppCompatActivity {
 
 avancar = (Button)findViewById(R.id.historia1)
 
-avancar.setOnClickListener(New View.OnClickListener(){
+avancar.setOnClickListener(new view.OnClickListener(){
 
            @override
            public void OnClick (View v)
@@ -23,6 +23,6 @@ avancar.setOnClickListener(New View.OnClickListener(){
          });
     }
 
-   Button avancar
+   Button avancar;
 
 }
