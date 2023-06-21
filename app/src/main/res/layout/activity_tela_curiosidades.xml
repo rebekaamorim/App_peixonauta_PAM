@@ -81,7 +81,7 @@
         android:id="@+id/btn_proximo"
         android:layout_width="144dp"
         android:layout_height="67dp"
-        android:backgroundTint="#FEE26E"
+        android:backgroundTint="#466785"
         android:text="@string/btn_proximo"
         android:textColorHint="#3F51B5"
         android:textSize="20sp"
