@@ -14,7 +14,7 @@
         android:background="#F44336"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
@@ -26,7 +26,7 @@
         android:layout_height="149dp"
         android:fontFamily="@font/fredoka_one"
         android:text="@string/text_vocesabia"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/azul_escuro"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,8 +37,8 @@
 
     <TextView
         android:id="@+id/curi1"
-        android:layout_width="317dp"
-        android:layout_height="73dp"
+        android:layout_width="318dp"
+        android:layout_height="95dp"
         android:fontFamily="@font/alata"
         android:text="@string/text_curi1"
         android:textSize="20sp"
@@ -47,7 +47,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.317" />
+        app:layout_constraintVertical_bias="0.298" />
 
     <TextView
         android:id="@+id/curi2"
@@ -61,7 +61,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.436" />
+        app:layout_constraintVertical_bias="0.424" />
 
     <TextView
         android:id="@+id/curi3"
@@ -75,13 +75,14 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.567" />
+        app:layout_constraintVertical_bias="0.575" />
 
     <Button
         android:id="@+id/btn_proximo"
         android:layout_width="144dp"
         android:layout_height="67dp"
-        android:backgroundTint="#466785"
+        android:backgroundTint="@color/azul_escuro"
+        android:fontFamily="@font/fredoka_one"
         android:text="@string/btn_proximo"
         android:textColorHint="#3F51B5"
         android:textSize="20sp"
