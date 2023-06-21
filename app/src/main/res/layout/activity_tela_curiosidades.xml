@@ -21,6 +21,19 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/fundo_r" />
 
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="27dp"
+        android:layout_height="282dp"
+        android:background="@color/amarelo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.424" />
+
     <TextView
         android:id="@+id/vocesabia"
         android:layout_width="179dp"
@@ -34,67 +47,68 @@
         app:layout_constraintHorizontal_bias="0.931"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058"
+        app:layout_constraintVertical_bias="0.056"
         tools:ignore="TextContrastCheck,TextSizeCheck" />
 
     <TextView
-        android:id="@+id/text_curi1"
-        android:layout_width="290dp"
-        android:layout_height="97dp"
-        android:fontFamily="@font/alata"
-        android:text="@string/text_curi1"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.869"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.293"
-        tools:ignore="TextSizeCheck" />
+            android:id="@+id/text_curi1"
+            android:layout_width="290dp"
+            android:layout_height="97dp"
+            android:fontFamily="@font/alata"
+            android:text="@string/text_curi1"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.869"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.293"
+            tools:ignore="TextSizeCheck" />
 
-    <TextView
-        android:id="@+id/text_curi2"
-        android:layout_width="272dp"
-        android:layout_height="72dp"
-        android:fontFamily="@font/alata"
-        android:text="@string/text_curi2"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.758"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.455"
-        tools:ignore="TextSizeCheck" />
+        <TextView
+            android:id="@+id/text_curi2"
+            android:layout_width="272dp"
+            android:layout_height="72dp"
+            android:fontFamily="@font/alata"
+            android:text="@string/text_curi2"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.758"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.455"
+            tools:ignore="TextSizeCheck" />
 
-    <TextView
-        android:id="@+id/text_curi3"
-        android:layout_width="231dp"
-        android:layout_height="64dp"
-        android:fontFamily="@font/alata"
-        android:text="@string/text_curi3"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.587"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575"
-        tools:ignore="TextSizeCheck" />
+        <TextView
+            android:id="@+id/text_curi3"
+            android:layout_width="231dp"
+            android:layout_height="64dp"
+            android:fontFamily="@font/alata"
+            android:text="@string/text_curi3"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.587"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.575"
+            tools:ignore="TextSizeCheck" />
 
-    <Button
-        android:id="@+id/btn_proximo"
-        android:layout_width="163dp"
-        android:layout_height="68dp"
-        android:backgroundTint="@color/azul_escuro"
-        android:fontFamily="@font/fredoka_one"
-        android:text="@string/btn_proximo"
-        android:textColor="@color/white"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.242"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.829" />
+        <Button
+            android:id="@+id/btn_proximo"
+            android:layout_width="163dp"
+            android:layout_height="68dp"
+            android:backgroundTint="@color/azul_escuro"
+            android:fontFamily="@font/fredoka_one"
+            android:text="@string/btn_proximo"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.242"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.829" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
