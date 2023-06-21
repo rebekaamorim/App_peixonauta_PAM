@@ -60,6 +60,7 @@ public class tela3_historia extends AppCompatActivity {
         });
 
         MediaPlayer mediaPlayer1 = MediaPlayer.create(this, R.raw.cena2);
+
         his2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
@@ -68,6 +69,48 @@ public class tela3_historia extends AppCompatActivity {
                     mediaPlayer1.pause();
                 } else {
                     mediaPlayer1.start();
+                }
+            }
+        });
+
+        MediaPlayer mediaPlayer2 = MediaPlayer.create(this, R.raw.cena3);
+
+        his3.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+
+                if (mediaPlayer2.isPlaying()) {
+                    mediaPlayer2.pause();
+                } else {
+                    mediaPlayer2.start();
+                }
+            }
+        });
+
+        MediaPlayer mediaPlayer3 = MediaPlayer.create(this, R.raw.cena4);
+
+        his4.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+
+                if (mediaPlayer3.isPlaying()) {
+                    mediaPlayer3.pause();
+                } else {
+                    mediaPlayer3.start();
+                }
+            }
+        });
+
+        MediaPlayer mediaPlayer4 = MediaPlayer.create(this, R.raw.cena5);
+
+        his5.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+
+                if (mediaPlayer4.isPlaying()) {
+                    mediaPlayer4.pause();
+                } else {
+                    mediaPlayer4.start();
                 }
             }
         });
