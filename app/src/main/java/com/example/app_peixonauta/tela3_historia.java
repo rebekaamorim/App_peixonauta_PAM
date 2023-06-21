@@ -59,6 +59,19 @@ public class tela3_historia extends AppCompatActivity {
             }
         });
 
+        MediaPlayer mediaPlayer1 = MediaPlayer.create(this, R.raw.cena2);
+        his2.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+
+                if (mediaPlayer1.isPlaying()) {
+                    mediaPlayer1.pause();
+                } else {
+                    mediaPlayer1.start();
+                }
+            }
+        });
+
     }
   ImageButton btnproximo;
   ImageButton btnvoltar;
