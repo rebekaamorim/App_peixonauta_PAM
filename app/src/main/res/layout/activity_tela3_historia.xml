@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fundo1"
     tools:context=".tela3_historia">
 
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo1"/>
 
-    <ScrollView
-        android:layout_width="410dp"
+    <HorizontalScrollView
+        android:layout_width="400dp"
         android:layout_height="match_parent"
         android:contentDescription="@string/scroll"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,24 +23,22 @@
         app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
-            android:layout_width="386dp"
+            android:layout_width="400dp"
             android:layout_height="600dp"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.454"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            android:layout_margin="10dp">
+            app:layout_constraintVertical_bias="0.0">
 
             <ImageButton
                 android:id="@+id/parte1"
-                android:layout_width="wrap_content"
+                android:layout_width="400dp"
                 android:layout_height="613dp"
                 android:backgroundTint="@android:color/transparent"
                 android:contentDescription="@string/historia1"
-                android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.491"
@@ -45,12 +46,14 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.135"
                 app:srcCompat="@drawable/parte1"
-                tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
+                tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck"
+                android:scaleType="fitCenter"/>
 
             <ImageButton
                 android:id="@+id/parte2"
-                android:layout_width="wrap_content"
-                android:layout_height="613dp"
+                android:layout_width="400dp"
+                android:layout_height="600dp"
+                android:layout_margin="10dp"
                 android:backgroundTint="@android:color/transparent"
                 android:contentDescription="@string/historia1"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -65,52 +68,52 @@
 
             <ImageButton
                 android:id="@+id/parte3"
-                android:layout_width="wrap_content"
+                android:layout_width="400dp"
                 android:layout_height="613dp"
                 android:backgroundTint="@android:color/transparent"
+                android:contentDescription="@string/historia1"
+                android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.135"
-                app:srcCompat="@drawable/parte3"
-                android:contentDescription="@string/historia1"
-                android:scaleType="fitCenter"/>
+                app:srcCompat="@drawable/parte3" />
 
             <ImageButton
                 android:id="@+id/parte4"
-                android:layout_width="wrap_content"
+                android:layout_width="400dp"
                 android:layout_height="613dp"
                 android:backgroundTint="@android:color/transparent"
+                android:contentDescription="@string/historia1"
+                android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.135"
-                app:srcCompat="@drawable/parte4"
-                android:contentDescription="@string/historia1"
-                android:scaleType="fitCenter"/>
+                app:srcCompat="@drawable/parte4" />
 
             <ImageButton
                 android:id="@+id/parte5"
-                android:layout_width="wrap_content"
+                android:layout_width="400dp"
                 android:layout_height="613dp"
                 android:backgroundTint="@android:color/transparent"
+                android:contentDescription="@string/historia1"
+                android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.135"
-                app:srcCompat="@drawable/parte5"
-                android:contentDescription="@string/historia1"
-                android:scaleType="fitCenter"/>
+                app:srcCompat="@drawable/parte5" />
 
 
         </LinearLayout>
-    </ScrollView>
+    </HorizontalScrollView>
 
     <ImageButton
         android:id="@+id/btn_avancar"
