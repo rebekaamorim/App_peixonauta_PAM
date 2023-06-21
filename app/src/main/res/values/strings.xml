@@ -18,5 +18,7 @@
     <string name="btn_proximo">Próximo</string>
     <string name="historia1">Histórinha numero 1</string>
     <string name="tela_curi">Tela de Curiosidades</string>
+    <string name="imagecuri">Imagem de personagem</string>
+    <string name="sair">Sair</string>
 </resources>
 

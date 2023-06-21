@@ -38,4 +38,19 @@
             app:srcCompat="@drawable/hq1"
             tools:ignore="ImageContrastCheck" />
 
+        <Button
+            android:id="@+id/sair"
+            android:layout_width="179dp"
+            android:layout_height="63dp"
+            android:backgroundTint="@color/azul_escuro"
+            android:fontFamily="@font/fredoka_one"
+            android:text="@string/sair"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.93" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

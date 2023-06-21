@@ -15,8 +15,9 @@ public class Lista_de_historias extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_de_historias);
 
-        ImageButton btnavancar;
+
         btnavancar = (ImageButton) findViewById(R.id.historia1);
+        sair = (Button) findViewById(R.id.sair);
 
         btnavancar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -27,6 +28,18 @@ public class Lista_de_historias extends AppCompatActivity {
             }
 
         });
-    }
 
+       sair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(Lista_de_historias.this, MainActivity.class);
+
+                startActivity(in);
+            }
+
+        });
+
+    }
+    Button sair;
+    ImageButton btnavancar;
     }
