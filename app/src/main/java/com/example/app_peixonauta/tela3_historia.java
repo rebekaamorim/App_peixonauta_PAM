@@ -3,6 +3,7 @@ package com.example.app_peixonauta;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -42,8 +43,21 @@ public class tela3_historia extends AppCompatActivity {
             }
 
         });
+        //botões de áudio
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.cena1);
 
-        //continuar ajeitando os botãos de histtória
+        his1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v) {
+
+                if (mediaPlayer.isPlaying()) {
+                    mediaPlayer.pause();
+                } else {
+                    mediaPlayer.start();
+                }
+
+            }
+        });
 
     }
   ImageButton btnproximo;
