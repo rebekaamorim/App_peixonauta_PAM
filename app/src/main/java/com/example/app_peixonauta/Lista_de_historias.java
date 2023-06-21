@@ -19,6 +19,7 @@ public class Lista_de_historias extends AppCompatActivity {
         btnavancar = (ImageButton) findViewById(R.id.historia1);
         sair = (Button) findViewById(R.id.sair);
 
+
         btnavancar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
