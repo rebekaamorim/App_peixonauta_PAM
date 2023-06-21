@@ -20,5 +20,8 @@
     <string name="tela_curi">Tela de Curiosidades</string>
     <string name="imagecuri">Imagem de personagem</string>
     <string name="sair">Sair</string>
+    <string name="estrela">estrelinha arredondada</string>
+    <string name="ilustracao">ilustração</string>
+
 </resources>
 
