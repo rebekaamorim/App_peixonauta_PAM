@@ -46,6 +46,7 @@
         android:backgroundTint="@color/laranja"
         android:fontFamily="@font/fredoka_one"
         android:text="@string/botao_start"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
