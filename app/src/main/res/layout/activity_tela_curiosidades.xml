@@ -18,7 +18,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/fundo3" />
+        app:srcCompat="@drawable/fundo3"
+        android:contentDescription="@string/tela_curi"/>
 
     <TextView
         android:id="@+id/vocesabia"
@@ -33,7 +34,8 @@
         app:layout_constraintHorizontal_bias="0.934"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.049"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/curi1"
@@ -47,7 +49,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.298" />
+        app:layout_constraintVertical_bias="0.298"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/curi2"
@@ -61,7 +64,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.424" />
+        app:layout_constraintVertical_bias="0.424"
+        tools:ignore="TextSizeCheck" />
 
     <TextView
         android:id="@+id/curi3"
@@ -75,7 +79,8 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.575" />
+        app:layout_constraintVertical_bias="0.575"
+        tools:ignore="TextSizeCheck" />
 
     <Button
         android:id="@+id/btn_proximo"
