@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class Lista_de_historias extends AppCompatActivity {
 
@@ -14,7 +15,6 @@ public class Lista_de_historias extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_de_historias);
-
 
         btnavancar = (ImageButton) findViewById(R.id.historia1);
         sair = (Button) findViewById(R.id.sair);
@@ -29,7 +29,7 @@ public class Lista_de_historias extends AppCompatActivity {
 
         });
 
-       sair.setOnClickListener(new View.OnClickListener() {
+        sair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent in = new Intent(Lista_de_historias.this, MainActivity.class);
@@ -38,7 +38,6 @@ public class Lista_de_historias extends AppCompatActivity {
             }
 
         });
-
     }
     Button sair;
     ImageButton btnavancar;

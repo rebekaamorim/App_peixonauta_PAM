@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -18,13 +19,13 @@ public class MainActivity extends AppCompatActivity {
         txt= (EditText) findViewById(R.id.nome);
 
         btnstart.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick (View v) {
-                Intent in = new Intent (MainActivity.this, Lista_de_historias.class);
+                @Override
 
-                startActivity (in);
-            }
+                public void onClick (View v) {
+                    Intent in = new Intent(MainActivity.this, Lista_de_historias.class);
 
+                    startActivity(in);
+                }
         });
 
     }
