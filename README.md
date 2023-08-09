@@ -6,13 +6,13 @@ Projeto PAM - Aplicativo Mobile
 
 ### Sobre o aplicativo
 
-O app Peixonauta é um aplicativo que exibe histórinhas em quadrinhos com áudios para crianças incentivando a cuidar do meio ambiente. A princípio, está disponível uma história, onde é retratado o uso consciente da água. O aplicativo, como já diz o nome, é todo estilizado com o tema do desenho animado Peixonauta e seus amigos, que embarcam em aventuras envolvendo o meio ambiente. 
+O aplicativo "Peixonauta" é tematizado com os personagens do desenho animado: Peixonauta. À princípio, o assunto abordado é o consumo consciente da água. Sendo assim, as suas principais funcionalidades é uma história em quadrinhos com áudio (HQ) e uma tela para cálculo de consumo de água (banho e torneira).
 
 
 ### Descrição do Aplicativo 
 #### 1. Tela de Login 
 
-A tela Main do aplicativo foi utilizado uma EditText para o usuário escrever o seu nome, e temos de fundo a nossa ImageView do nosso principal personagem, o Peixonauta. A seguir temos um Button para o usuário dar continuidade no aplicativo.
+A tela inicial do aplicativo vai ser composta por dois botões, um com opção de Login e o outro de Cadastro. A partir disso, o usuário terá a possibilidade de acessar as demais telas.
 
 #### 2. Tela Lista de História 
 Apartir do momento que o usuário irá clicar no botão da tela Main, ele irá acessar o tela de história, onde foi utilizado uma ImageButton, pois assim que ele clicar, vai ter acesso a história. Temos também um Button para voltar a tela Main. O fundo dessa tela é uma ImageView ao qual a cor escolhida é a nossa paleta de cores. 
