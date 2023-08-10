@@ -34,3 +34,5 @@ Obs.: Vale ressaltar que terá a possibilidade de alternância entre um tipo de 
 ### Diagrama de Classes 
 
 ![DIAGRAMA_APP](https://github.com/rebekaamorim/App_peixonauta_PAM/assets/127450671/44e0ce71-370f-4d6b-bc65-a8c5b30094d4)
+
+#### Descrição e explicação do diagrama
