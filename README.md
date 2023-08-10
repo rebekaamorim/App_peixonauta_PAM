@@ -30,3 +30,7 @@ Nesta tela, será abordado três dicas referente a história escutada (que neste
 Nesta tela, será abordado uma interatividade, no qual o usuário terá que calcular o seu consumo de água no banho e também em uma torneira, ou seja, terá a opção de analisar e saber o consumo de água de seu chuveiro e torneira durante um determinado período ou dias gastado, e ao finalizar, terá uma breve mensagem se está economizando ou gastando muita água durante esse processo.
 
 Obs.: Vale ressaltar que terá a possibilidade de alternância entre um tipo de cálculo, ou seja, entre o cálculo do chuveiro e da torneira nessa mesma tela apresentada.
+
+### Diagrama de Classes 
+
+![DIAGRAMA_APP](https://github.com/rebekaamorim/App_peixonauta_PAM/assets/127450671/44e0ce71-370f-4d6b-bc65-a8c5b30094d4)
