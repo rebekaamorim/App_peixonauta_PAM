@@ -44,3 +44,4 @@ Obs.: Vale ressaltar que terá a possibilidade de alternância entre um tipo de 
 
 ##### Multiplicidade e relacionamentos
 
+A classe "Usuario" e "Cadastro" possuem um relacionamento de composição, pois elas são inseparáveis. O usárop precisa se cadastrar para entrar com o login, e o login precisa das informações do castrado para ser validado. A multiplicidade entre eles é de 1 para 1, pois apenas um login pode ter um cadastro e visse versa.
