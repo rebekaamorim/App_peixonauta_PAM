@@ -45,3 +45,7 @@ Obs.: Vale ressaltar que terá a possibilidade de alternância entre um tipo de 
 ##### Multiplicidade e relacionamentos
 
 A classe "Usuario" e "Cadastro" possuem um relacionamento de composição, pois elas são inseparáveis. O usárop precisa se cadastrar para entrar com o login, e o login precisa das informações do castrado para ser validado. A multiplicidade entre eles é de 1 para 1, pois apenas um login pode ter um cadastro e visse versa.
+
+A classe "Usuário" e "Consumo" possuem um relacionamento d dependencia, pois, como o próprio nome diz, para o usuário calcular seu consumo ele precisa estar logado, ou seja, depende do login. A multiplicidade entre eles é de 0 para muitos, pois não necessáriamente o usuário precisa ter um consumo, ou, ele pode ter muitos consumos.
+
+OBS: Todos os atributos e métodos são privados. 
