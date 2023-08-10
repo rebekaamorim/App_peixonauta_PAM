@@ -36,3 +36,11 @@ Obs.: Vale ressaltar que terá a possibilidade de alternância entre um tipo de 
 ![DIAGRAMA_APP](https://github.com/rebekaamorim/App_peixonauta_PAM/assets/127450671/44e0ce71-370f-4d6b-bc65-a8c5b30094d4)
 
 #### Descrição e explicação do diagrama
+
+##### Este diagrama é composto por 3 classes:
+- Usario: é composto pelos atributos "usuario" e "senha", ambos são do tipo string. O método dessa classe é "entrar", pois ela representa a tela de login para acessar o aplicativo.
+- Cadastro: essa classe é composta pelos atributos "nomme_usuario", "senha", "foto" e "descricao". Todas elas recebem dadso do tipo string, menos o atributo foto, qu recebe o tipo _img_. Seus métodos são cadastrar e atualizar, pois o usuario pode colocar seus dados, e se quiser modifica-los depois.
+- Consumo: Essa classe é composta pelos atributos "minutos" do tipo double, e "periodo_dias" do tipo int. Eles representam respectivamente, os minutos que o usuáio passa com o chuveiro ou a torneira ligada e o período de dias que o usuario que descobrir o seu gasto total. Obviamente, seu método é calcular.
+
+##### Multiplicidade e relacionamentos
+
