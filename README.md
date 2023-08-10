@@ -38,14 +38,14 @@ Obs.: Vale ressaltar que terá a possibilidade de alternância entre um tipo de 
 #### Descrição e explicação do diagrama
 
 ##### Este diagrama é composto por 3 classes:
-- Usario: é composto pelos atributos "usuario" e "senha", ambos são do tipo string. O método dessa classe é "entrar", pois ela representa a tela de login para acessar o aplicativo.
-- Cadastro: essa classe é composta pelos atributos "nomme_usuario", "senha", "foto" e "descricao". Todas elas recebem dadso do tipo string, menos o atributo foto, qu recebe o tipo _img_. Seus métodos são cadastrar e atualizar, pois o usuario pode colocar seus dados, e se quiser modifica-los depois.
-- Consumo: Essa classe é composta pelos atributos "minutos" do tipo double, e "periodo_dias" do tipo int. Eles representam respectivamente, os minutos que o usuáio passa com o chuveiro ou a torneira ligada e o período de dias que o usuario que descobrir o seu gasto total. Obviamente, seu método é calcular.
+- Usuario: é composto pelos atributos "usuario" e "senha", ambos são do tipo string. O método dessa classe é "entrar", pois ela representa a tela de login para acessar o aplicativo.
+- Cadastro: essa classe é composta pelos atributos "nome_usuario", "senha", "foto" e "descricao". Todas elas recebem dados do tipo string, menos o atributo foto, no qual recebe o tipo _img_. Seus métodos são cadastrar e atualizar, já que o usuario pode colocar seus dados, e se quiser modificá-los depois.
+- Consumo: Essa classe é composta pelos atributos "minutos" do tipo double, e "periodo_dias" do tipo int. Eles representam, respectivamente, os minutos que o usuário passa com o chuveiro ou a torneira ligada e o período de dias que o usuario que descobrir o seu gasto total. Obviamente, seu método é calcular.
 
 ##### Multiplicidade e relacionamentos
 
-A classe "Usuario" e "Cadastro" possuem um relacionamento de composição, pois elas são inseparáveis. O usárop precisa se cadastrar para entrar com o login, e o login precisa das informações do castrado para ser validado. A multiplicidade entre eles é de 1 para 1, pois apenas um login pode ter um cadastro e visse versa.
+A classe "Usuario" e "Cadastro" possuem um relacionamento de composição, pois elas são inseparáveis. O usuário precisa se cadastrar para entrar com o login, e o login precisa das informações do castrado para ser validado. A multiplicidade entre eles é de 1 para 1, pois apenas um login pode ter um cadastro e vice-versa.
 
-A classe "Usuário" e "Consumo" possuem um relacionamento d dependencia, pois, como o próprio nome diz, para o usuário calcular seu consumo ele precisa estar logado, ou seja, depende do login. A multiplicidade entre eles é de 0 para muitos, pois não necessáriamente o usuário precisa ter um consumo, ou, ele pode ter muitos consumos.
+A classe "Usuario" e "Consumo" possuem um relacionamento de dependência, pois, como o próprio nome diz, para o usuário calcular seu consumo ele precisa estar logado, ou seja, depende do login. A multiplicidade entre eles é de 0 para muitos, visto que não necessariamente o usuário precisa ter um consumo ou ele pode ter muitos consumos.
 
-OBS: Todos os atributos e métodos são privados. 
+Obs.: Todos os atributos e métodos são privados. 
