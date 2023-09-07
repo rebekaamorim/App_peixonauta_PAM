@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
 public class Lista_de_historias extends AppCompatActivity {
 
@@ -17,7 +16,8 @@ public class Lista_de_historias extends AppCompatActivity {
         setContentView(R.layout.activity_lista_de_historias);
 
         btnavancar = (ImageButton) findViewById(R.id.historia1);
-        sair = (Button) findViewById(R.id.sair);
+        sair = (ImageButton) findViewById(R.id.sair);
+        consumo = (Button) findViewById(R.id.consumo);
 
 
         btnavancar.setOnClickListener(new View.OnClickListener() {
@@ -30,16 +30,18 @@ public class Lista_de_historias extends AppCompatActivity {
 
         });
 
-        sair.setOnClickListener(new View.OnClickListener() {
+
+        consumo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(Lista_de_historias.this, MainActivity.class);
+                Intent in = new Intent(Lista_de_historias.this, calculadora.class);
 
                 startActivity(in);
             }
 
         });
     }
-    Button sair;
+    Button consumo;
+    ImageButton sair;
     ImageButton btnavancar;
     }

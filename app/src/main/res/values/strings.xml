@@ -9,7 +9,7 @@
     <string name="text_dica1">Feche a torneira enquanto escova os dentes!</string>
     <string name="text_dica2">Fique menos tempo no chuveiro!</string>
     <string name="text_dica3">Use a água de forma consciente!</string>
-    <string name="btn_sair">Sair</string>
+    <string name="btn_consumo">CONSUMO</string>
     <string name="scroll">Rolar histórias</string>
     <string name="text_vocesabia">Você Sabia?</string>
     <string name="text_curi1">Apenas 0,77% da água do mundo está disponível para o consumo humano.</string>
@@ -22,6 +22,15 @@
     <string name="sair">Sair</string>
     <string name="estrela">estrelinha arredondada</string>
     <string name="ilustracao">ilustração</string>
+    <string name="titulocalculadora">CONSUMO</string>
+    <string name="entrada1">"Quantos minutos você gasta?"</string>
+    <string name="entrada2">Você quer ver seu consumo de água durante quantos dias?</string>
+    <string name="btn_cal">Calcular</string>
+    <string name="edit_ca1">Digite os minutos</string>
+    <string name="edit_cal2">Digite o números de dias</string>
+    <string name="banho">Banho</string>
+    <string name="torneira">Torneira</string>
+    <string name="text_preresul">Seu consumo foi de:</string>
 
 </resources>
 
