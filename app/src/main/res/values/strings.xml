@@ -9,7 +9,7 @@
     <string name="text_dica1">Feche a torneira enquanto escova os dentes!</string>
     <string name="text_dica2">Fique menos tempo no chuveiro!</string>
     <string name="text_dica3">Use a água de forma consciente!</string>
-    <string name="btn_sair">Sair</string>
+    <string name="btn_consumo">CONSUMO</string>
     <string name="scroll">Rolar histórias</string>
     <string name="text_vocesabia">Você Sabia?</string>
     <string name="text_curi1">Apenas 0,77% da água do mundo está disponível para o consumo humano.</string>
@@ -22,6 +22,7 @@
     <string name="sair">Sair</string>
     <string name="estrela">estrelinha arredondada</string>
     <string name="ilustracao">ilustração</string>
+    <string name="titulocalculadora">CALCULAR CONSUMO</string>
 
 </resources>
 
