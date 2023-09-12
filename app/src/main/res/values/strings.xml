@@ -5,7 +5,7 @@
     <string name="botao_entrar">ENTRAR</string>
     <string name="resultado_usuario"> </string>
     <string name="resultado_senha"> </string>
-    <string name="botao_salvar">SALVAR</string>
+    <string name="botao_confirmar">CONFIRMAR</string>
     <string name="string_perfil">PERFIL</string>
     <string name="string_foto">Foto:</string>
     <string name="string_nome_usuario">Usuário:</string>

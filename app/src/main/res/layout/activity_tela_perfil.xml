@@ -97,12 +97,12 @@
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button
-        android:id="@+id/button_salvar"
+        android:id="@+id/button_confirmar"
         android:layout_width="235dp"
         android:layout_height="63dp"
         android:backgroundTint="@color/azul_claro3"
         android:fontFamily="@font/fredoka_one"
-        android:text="@string/botao_salvar"
+        android:text="@string/botao_confirmar"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -130,16 +130,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/resultado_usuario"
-        tools:layout_editor_absoluteX="188dp"
-        tools:layout_editor_absoluteY="152dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.202" />
 
     <TextView
         android:id="@+id/resultado_senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/resultado_senha"
-        tools:layout_editor_absoluteX="187dp"
-        tools:layout_editor_absoluteY="246dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

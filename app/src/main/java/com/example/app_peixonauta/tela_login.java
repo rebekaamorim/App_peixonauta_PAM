@@ -27,6 +27,7 @@ public class tela_login extends AppCompatActivity {
 
                 Intent intent = new Intent(tela_login.this, tela_perfil.class);
                 intent.putExtra("username", username);
+                intent.putExtra("password", password);
                 startActivity(intent);
             }
         });
