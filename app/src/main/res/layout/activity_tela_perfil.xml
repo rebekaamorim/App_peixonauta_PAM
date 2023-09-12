@@ -28,10 +28,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.39"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintVertical_bias="0.6" />
 
     <TextView
         android:id="@+id/nome_usuario"
@@ -85,15 +85,15 @@
 
     <EditText
         android:id="@+id/bio"
-        android:layout_width="288dp"
-        android:layout_height="167dp"
+        android:layout_width="204dp"
+        android:layout_height="166dp"
         android:background="@color/azul_claro2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.715"
+        app:layout_constraintHorizontal_bias="0.652"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.618"
+        app:layout_constraintVertical_bias="0.617"
         tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
     <Button

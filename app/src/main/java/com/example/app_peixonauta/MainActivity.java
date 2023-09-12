@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
 
                 public void onClick (View v) {
-                    Intent in = new Intent(MainActivity.this, tela_perfil.class);
+                    Intent in = new Intent(MainActivity.this, tela_login.class);
 
                     startActivity(in);
                 }
