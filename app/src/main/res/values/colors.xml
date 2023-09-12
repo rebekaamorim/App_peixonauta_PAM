@@ -8,8 +8,14 @@
     <color name="azul_pastel">#A7D9D3</color>
     <color name="amarelo_claro">#D5BF00</color>
     <color name="amarelo">#F2A71B</color>
+    <color name="bege">#FFF6D2</color>
     <color name="laranja">#F27127</color>
     <color name="verde">#56DE00</color>
     <color name="verde_escuro">#168700</color>
-    <color name="bege">#FFF6D2</color>
+    <color name="azul_esverdeado_claro">#7FB9BF</color>
+    <color name="amarelo_alaranjado">#FEB405</color>
+    <color name="preto_puro">#131313</color>
+    <color name="azul_claro2">#75B4DE</color>
+    <color name="amarelo_branco">#FFF6D2</color>
+    <color name="azul_claro3">#98BAD7</color>
 </resources>

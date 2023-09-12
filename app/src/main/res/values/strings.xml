@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">App_peixonauta</string>
+    <string name="string_usuario">👨‍💼 Usuário:</string>
+    <string name="string_senha">🔒 Senha:</string>
+    <string name="botao_entrar">ENTRAR</string>
+    <string name="resultado_usuario"> </string>
+    <string name="resultado_senha"> </string>
+    <string name="botao_salvar">SALVAR</string>
+    <string name="string_perfil">PERFIL</string>
+    <string name="string_foto">Foto:</string>
+    <string name="string_nome_usuario">Usuário:</string>
+    <string name="string_nome_senha">Senha:</string>
+    <string name="string_nome_bio">Bio:</string>
     <string name="text_nome">Digite seu nome aqui</string>
     <string name="botao_start">Play</string>
     <string name="text_boasvindas">Bem vindo(a)!</string>
