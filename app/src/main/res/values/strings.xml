@@ -33,7 +33,12 @@
     <string name="sair">Sair</string>
     <string name="estrela">estrelinha arredondada</string>
     <string name="ilustracao">ilustração</string>
-    <string name="titulocalculadora">CALCULAR CONSUMO</string>
-
+    <string name="titulocalculadora">CONSUMO</string>
+    <string name="entrada1">Quantos minustos você gasta?</string>
+    <string name="entrada2">Você quer ver seu gasto de água durante quantos dias?</string>
+    <string name="edit_cal1">Digite os minutos</string>
+    <string name="edit_cal2">Digite o número de dias</string>
+    <string name="preresul">Seu consumo em litros foi de:</string>
+    <string name="btn_cal">CALCULAR</string>
 </resources>
 
