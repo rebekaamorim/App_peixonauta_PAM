@@ -22,15 +22,7 @@
     <string name="sair">Sair</string>
     <string name="estrela">estrelinha arredondada</string>
     <string name="ilustracao">ilustração</string>
-    <string name="titulocalculadora">CONSUMO</string>
-    <string name="entrada1">"Quantos minutos você gasta?"</string>
-    <string name="entrada2">Você quer ver seu consumo de água durante quantos dias?</string>
-    <string name="btn_cal">Calcular</string>
-    <string name="edit_ca1">Digite os minutos</string>
-    <string name="edit_cal2">Digite o números de dias</string>
-    <string name="banho">Banho</string>
-    <string name="torneira">Torneira</string>
-    <string name="text_preresul">Seu consumo foi de:</string>
+    <string name="titulocalculadora">CALCULAR CONSUMO</string>
 
 </resources>
 

@@ -19,7 +19,15 @@ public class Lista_de_historias extends AppCompatActivity {
         sair = (ImageButton) findViewById(R.id.sair);
         consumo = (Button) findViewById(R.id.consumo);
 
+        sair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(Lista_de_historias.this, MainActivity.class);
 
+                startActivity(in);
+            }
+
+        });
         btnavancar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

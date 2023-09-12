@@ -49,14 +49,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.01"
-            app:srcCompat="@drawable/seta_voltar" />
+            app:srcCompat="@drawable/seta_voltar"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <Button
             android:id="@+id/consumo"
             android:layout_width="223dp"
             android:layout_height="58dp"
             android:backgroundTint="@color/amarelo_claro"
+            android:fontFamily="@font/fredoka_one"
             android:text="@string/btn_consumo"
+            android:textColor="@color/white"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

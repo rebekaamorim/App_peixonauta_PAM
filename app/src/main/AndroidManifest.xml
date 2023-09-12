@@ -12,9 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_peixonauta"
         tools:targetApi="31">
+
         <activity
             android:name=".calculadora"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Tela_com_estrelas"
             android:exported="false" />
@@ -33,6 +34,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".Lista_de_historias"
             android:exported="true" />
