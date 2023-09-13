@@ -1,7 +1,6 @@
 package com.example.app_peixonauta;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +10,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-import org.w3c.dom.Text;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class calculadora extends AppCompatActivity {
 
@@ -37,14 +36,6 @@ public class calculadora extends AppCompatActivity {
 
         });
 
-        opcao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                calcular_chuveiro();
-                calcular_torneira();
-
-            }
-        });
 
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,8 +46,18 @@ public class calculadora extends AppCompatActivity {
                 tiposcal();
             }
         });
+
+        opcao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                calcular_torneira();
+                calcular_chuveiro();
+
+            }
+        });
     }
 
+    @SuppressLint("SetTextI18n")
     public void calcular_chuveiro() {
         double consumo = min * 15;
         double consumototal = consumo * periodo;
@@ -64,6 +65,7 @@ public class calculadora extends AppCompatActivity {
         result.setText (Double.toString(consumototal));
 
     }
+    @SuppressLint("SetTextI18n")
     public void calcular_torneira(){
         double consumo = min * 16;
         double consumototal =  periodo * consumo;

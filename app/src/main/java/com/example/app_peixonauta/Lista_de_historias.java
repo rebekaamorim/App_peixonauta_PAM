@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class Lista_de_historias extends AppCompatActivity {
 
@@ -44,6 +45,8 @@ public class Lista_de_historias extends AppCompatActivity {
                 Intent in = new Intent(Lista_de_historias.this, tela3_historia.class);
 
                 startActivity(in);
+
+                Toast.makeText(Lista_de_historias.this, "Role as imagens e aperte para sair som!", Toast.LENGTH_SHORT).show();
             }
 
         });

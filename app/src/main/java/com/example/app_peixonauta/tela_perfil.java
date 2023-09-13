@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,9 +18,10 @@ public class tela_perfil extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_perfil);
 
-        TextView resultado_usuario = findViewById(R.id.resultado_usuario);
-        TextView resultado_senha = findViewById(R.id.resultado_senha);
-        Button button_confirmar = findViewById(R.id.button_confirmar);
+        resultado_usuario = (TextView)findViewById(R.id.resultado_usuario);
+        resultado_senha = (TextView)findViewById(R.id.resultado_senha);
+        button_confirmar = (Button) findViewById(R.id.button_confirmar);
+        sair = (ImageButton) findViewById(R.id.voltar);
 
         Intent intent = getIntent();
         if (intent != null) {
@@ -33,6 +35,16 @@ public class tela_perfil extends AppCompatActivity {
                 resultado_senha.setText(password);
             }
         }
+
+        sair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(tela_perfil.this, Lista_de_historias.class);
+
+                startActivity(in);
+            }
+
+        });
         button_confirmar.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick (View v) {
@@ -44,8 +56,8 @@ public class tela_perfil extends AppCompatActivity {
         });
     }
     Button button_confirmar;
-    TextView nome_usuario;
-    TextView nome_senha;
-    TextView nome_bio;
+    TextView resultado_usuario;
+    TextView resultado_senha;
+    ImageButton sair;
 
 }

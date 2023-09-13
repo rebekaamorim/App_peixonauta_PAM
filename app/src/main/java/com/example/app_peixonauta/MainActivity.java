@@ -7,30 +7,33 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tela_login);
 
-        btnstart= (Button) findViewById(R.id.button_start);
-        txt= (EditText) findViewById(R.id.nome);
+        usuario = findViewById(R.id.usuario);
+        senha = findViewById(R.id.senha);
+        button_entrar = findViewById(R.id.button_entrar);
 
-        btnstart.setOnClickListener(new View.OnClickListener(){
-                @Override
+        button_entrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String username = usuario.getText().toString();
+                String password = senha.getText().toString();
 
-                public void onClick (View v) {
-                    Intent in = new Intent(MainActivity.this, tela_login.class);
-
-                    startActivity(in);
-                }
+                Intent intent = new Intent(MainActivity.this, tela_perfil.class);
+                intent.putExtra("username", username);
+                intent.putExtra("password", password);
+                startActivity(intent);
+            }
         });
-
     }
+    EditText usuario;
+    EditText senha;
+    Button button_entrar;
 
-    // Definindo botãos
-    Button btnstart;
-    EditText txt;
 }

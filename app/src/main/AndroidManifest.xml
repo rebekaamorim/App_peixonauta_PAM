@@ -17,9 +17,6 @@
             android:name=".tela_perfil"
             android:exported="false" />
         <activity
-            android:name=".tela_login"
-            android:exported="false" />
-        <activity
             android:name=".calculadora"
             android:exported="true" />
         <activity

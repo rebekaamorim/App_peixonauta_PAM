@@ -40,5 +40,6 @@
     <string name="edit_cal2">Digite o número de dias</string>
     <string name="preresul">Seu consumo em litros foi de:</string>
     <string name="btn_cal">CALCULAR</string>
+    <string name="dicahistorinha">Role a tela para o lado! >>> </string>
 </resources>
 
