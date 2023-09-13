@@ -36,48 +36,37 @@ public class calculadora extends AppCompatActivity {
 
         });
 
-
         cal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 min = Double.parseDouble(minutos.getText().toString());
                 periodo = Double.parseDouble(dias.getText().toString());
 
-                tiposcal();
-            }
-        });
-
-        opcao.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                calcular_torneira();
-                calcular_chuveiro();
+                if (opcao.isChecked()){
+                    calcular_chuveiro();
+                } else {
+                    calcular_torneira();
+                }
 
             }
         });
+
+
     }
 
-    @SuppressLint("SetTextI18n")
     public void calcular_chuveiro() {
         double consumo = min * 15;
         double consumototal = consumo * periodo;
 
-        result.setText (Double.toString(consumototal));
+        result.setText (String.format(String.valueOf(consumototal)));
 
     }
-    @SuppressLint("SetTextI18n")
     public void calcular_torneira(){
         double consumo = min * 16;
         double consumototal =  periodo * consumo;
-        result.setText (Double.toString(consumototal));
+        result.setText (String.format(String.valueOf(consumototal)));
     }
-    public void tiposcal(){
-        if (opcao.isChecked()){
-            calcular_chuveiro();
-        } else {
-            calcular_torneira();
-        }
-    }
+
 
     ImageButton sair2;
     EditText minutos;
