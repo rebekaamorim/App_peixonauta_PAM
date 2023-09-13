@@ -39,7 +39,7 @@ public class tela_perfil extends AppCompatActivity {
         sair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(tela_perfil.this, Lista_de_historias.class);
+                Intent in = new Intent(tela_perfil.this, MainActivity.class);
 
                 startActivity(in);
             }
