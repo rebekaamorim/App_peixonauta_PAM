@@ -41,8 +41,8 @@
 
     <EditText
         android:id="@+id/usuario"
-        android:layout_width="337dp"
-        android:layout_height="61dp"
+        android:layout_width="279dp"
+        android:layout_height="71dp"
         android:layout_marginHorizontal="40dp"
         android:backgroundTint="@color/preto_puro"
         android:hint="@string/string_usuario"
@@ -58,8 +58,8 @@
 
     <EditText
         android:id="@+id/senha"
-        android:layout_width="337dp"
-        android:layout_height="61dp"
+        android:layout_width="280dp"
+        android:layout_height="56dp"
         android:layout_marginHorizontal="40dp"
         android:backgroundTint="@color/preto_puro"
         android:hint="@string/string_senha"

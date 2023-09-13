@@ -28,10 +28,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.377"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6" />
+        app:layout_constraintVertical_bias="0.56" />
 
     <TextView
         android:id="@+id/nome_usuario"
@@ -61,7 +61,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.344"
@@ -90,8 +90,8 @@
 
     <EditText
         android:id="@+id/bio"
-        android:layout_width="260dp"
-        android:layout_height="148dp"
+        android:layout_width="212dp"
+        android:layout_height="160dp"
         android:background="@color/azul_pastel"
         android:textColor="@color/amarelo_branco"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -137,27 +137,31 @@
         android:id="@+id/resultado_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
         android:text="@string/resultado_usuario"
         android:textColor="@color/laranja"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202" />
+        app:layout_constraintVertical_bias="0.2" />
 
     <TextView
         android:id="@+id/resultado_senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/akaya_telivigala"
         android:text="@string/resultado_senha"
         android:textColor="@color/verde_escuro"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
+        app:layout_constraintVertical_bias="0.347" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
