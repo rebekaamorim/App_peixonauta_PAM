@@ -19,17 +19,7 @@ public class Lista_de_historias extends AppCompatActivity {
         btnavancar = (ImageButton) findViewById(R.id.historia1);
         sair = (ImageButton) findViewById(R.id.sair);
         consumo = (Button) findViewById(R.id.consumo);
-        button_perfil = (ImageButton) findViewById(R.id.button_perfil);
 
-        button_perfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent in = new Intent(Lista_de_historias.this, tela_perfil.class);
-
-                startActivity(in);
-            }
-
-        });
         sair.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,7 +52,6 @@ public class Lista_de_historias extends AppCompatActivity {
 
         });
     }
-    ImageButton button_perfil;
     Button consumo;
     ImageButton sair;
     ImageButton btnavancar;

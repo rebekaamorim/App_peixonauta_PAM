@@ -9,10 +9,10 @@ O aplicativo "Peixonauta" é tematizado com os personagens do desenho animado: P
 
 ### Descrição do Aplicativo:
 #### 1. Tela Inicial (Login)
-A tela inicial do aplicativo vai ser composta por dois botões, um com opção de Login e o outro de Cadastro (primeiro acesso). A partir disso, o usuário terá a possibilidade de acessar as demais telas.
+A tela inicial do aplicativo vai ser composta pelo nome do usuário, senha para o usuário preencher, além de ter um botão, com opção de Entrar. A partir disso, o usuário terá a possibilidade de acessar a tela cadastro/perfil.
 
-#### 2. Tela Cadastro (Primeiro Acesso)
-A tela cadastro vai ser utilizada pelos usuários que estão acessando o aplicativo pela primeira vez, logo vai ser composta pelo nome do usuário, senha, foto e descrição/biografia para o usuário preencher. Por meio disso, haverá dois botões, um com opção de cadastrar o cliente no aplicativo e o outro para voltar a tela inicial (login).
+#### 2. Tela Cadastro/Perfil 
+A tela perfil vai ser utilizada pelos usuários que estão acessando o aplicativo pela primeira vez, logo vai aparecer nessa tela os dados preenchidos na tela incial, além de ter a opção de escrever um texto para sua bio. Por meio disso, haverá um botão, um com opção do cliente "confirmar" os dados apresentados no aplicativo e um outro (ImageButton) para voltar a tela inicial (login), caso queria alterar algum dado errado.
 
 #### 3. Tela Menu
 Depois do usuário estar logado, ele terá acesso ao conteúdo do aplicativo, composto pela história do Peixonauta sobre o consumo de água consciente e opção de calcular o consumo de água do usuário ao utilizar o chuveiro ou a torneira.
