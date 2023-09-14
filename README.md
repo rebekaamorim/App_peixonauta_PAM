@@ -5,7 +5,7 @@ Projeto PAM – Aplicativo Mobile
 
 ### Sobre o aplicativo:
 
-O aplicativo "Peixonauta (Novas Missões do Peixonauta)" é tematizado com os personagens do desenho animado: Peixonauta. A princípio, o assunto abordado é o consumo consciente da água. Sendo assim, as suas principais funcionalidades é uma história em quadrinhos com áudio (HQ) e uma tela para cálculo de consumo de água (chuveiro/banho e torneira).
+O aplicativo "Peixonauta (Novas Missões do Peixonauta)" é tematizado com os personagens do desenho animado: Peixonauta e seus amigos. A princípio, o assunto abordado é o consumo consciente da água. Sendo assim, as suas principais funcionalidades é uma história em quadrinhos com áudio (HQ) e uma tela para cálculo de consumo de água (chuveiro/banho e torneira).
 
 ### Descrição do Aplicativo:
 #### 1. Tela Inicial (Login)
