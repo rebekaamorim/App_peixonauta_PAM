@@ -63,7 +63,7 @@
         android:layout_height="52dp"
         android:layout_marginHorizontal="40dp"
         android:backgroundTint="@color/preto_puro"
-        android:fontFamily="@font/akaya_telivigala"
+        android:fontFamily="@font/alata"
         android:hint="@string/string_senha"
         android:inputType="textPassword"
         android:textColorHint="@color/preto_puro"
