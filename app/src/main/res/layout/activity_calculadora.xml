@@ -82,6 +82,7 @@
         android:fontFamily="@font/alata"
         android:hint="@string/edit_cal1"
         android:inputType="number"
+        android:minHeight="48dp"
         android:textColor="@color/azul_medio"
         android:textColorHint="@color/laranja"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -139,7 +140,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.59"
-        tools:ignore="Autofill,TextContrastCheck" />
+        tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btncacular"
