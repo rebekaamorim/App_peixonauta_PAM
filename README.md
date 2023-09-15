@@ -49,3 +49,6 @@ A classe "Usuario" e "Cadastro" possuem um relacionamento de composição, pois 
 A classe "Usuario" e "Consumo" possuem um relacionamento de dependência, pois, como o próprio nome diz, para o usuário calcular seu consumo ele precisa estar logado, ou seja, depende do login. A multiplicidade entre eles é de 0 para muitos, visto que não necessariamente o usuário precisa ter um consumo ou ele pode ter muitos consumos.
 
 Obs.: Todos os atributos e métodos são privados. 
+
+### VIDEO DO FUNCIONAMENTO
+
