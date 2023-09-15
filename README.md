@@ -52,3 +52,5 @@ Obs.: Todos os atributos e métodos são privados.
 
 ### VIDEO DO FUNCIONAMENTO
 
+
+https://youtu.be/7Zj0XQtEmT4?feature=shared
