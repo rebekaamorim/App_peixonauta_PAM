@@ -12,10 +12,12 @@
         android:layout_width="412dp"
         android:layout_height="67dp"
         android:background="@color/azul_claro2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -35,23 +37,6 @@
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/nome_usuario"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/arista_pro"
-        android:text="@string/string_nome_usuario"
-        android:textColor="@color/azul_escuro"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.206"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
         android:id="@+id/nome_senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -62,49 +47,28 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintHorizontal_bias="0.107"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344"
+        app:layout_constraintVertical_bias="0.66"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/nome_bio"
+        android:id="@+id/nome_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="17dp"
-        android:layout_marginBottom="231dp"
-        android:fontFamily="@font/arista"
-        android:text="@string/string_nome_bio"
+        android:fontFamily="@font/arista_pro"
+        android:text="@string/string_nome_usuario"
         android:textColor="@color/azul_escuro"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bio"
-        app:layout_constraintHorizontal_bias="0.444"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nome_senha"
-        app:layout_constraintVertical_bias="0.19"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/bio"
-        android:layout_width="223dp"
-        android:layout_height="92dp"
-        android:background="@color/azul_pastel"
-        android:fontFamily="@font/alata"
-        android:importantForAutofill="no"
-        android:textColor="@color/amarelo_branco"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.546"
-        tools:ignore="LabelFor,MissingConstraints,SpeakableTextPresentCheck,TextFields" />
+        app:layout_constraintVertical_bias="0.52"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button_confirmar"
@@ -119,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814"
+        app:layout_constraintVertical_bias="0.875"
         tools:ignore="TextContrastCheck,TextSizeCheck" />
 
     <ImageButton
@@ -151,7 +115,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.517" />
 
     <TextView
         android:id="@+id/resultado_senha"
@@ -166,7 +130,19 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.344" />
+        app:layout_constraintVertical_bias="0.655" />
+
+    <ImageView
+        android:id="@+id/fotoperfil"
+        android:layout_width="154dp"
+        android:layout_height="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        tools:src="@tools:sample/avatars" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
