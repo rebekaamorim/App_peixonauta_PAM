@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
-import android.net.Uri;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -19,8 +18,6 @@ public class tela_perfil extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_perfil);
-
-
 
         resultado_usuario = (TextView)findViewById(R.id.resultado_usuario);
         resultado_senha = (TextView)findViewById(R.id.resultado_senha);
