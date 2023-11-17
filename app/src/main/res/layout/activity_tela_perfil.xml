@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/amarelo_branco"
-    tools:context=".MainActivity2">
+    tools:context=".MainActivity">
 
     <View
         android:id="@+id/view"
@@ -131,18 +131,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.655" />
-
-    <ImageView
-        android:id="@+id/fotoperfil"
-        android:layout_width="154dp"
-        android:layout_height="148dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
-        tools:src="@tools:sample/avatars" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

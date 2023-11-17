@@ -7,26 +7,20 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.net.Uri;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class tela_perfil extends AppCompatActivity {
-    private static final int CAPTURAR_IMAGEM = 1;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_perfil);
 
-        public void capturarImagem(View v){
-            Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-            if (intent.resolveActivity(getPackageManager()) != null) {
-                startActivityForResult(intent, CAPTURAR_IMAGEM);
-            }
 
-        }
 
         resultado_usuario = (TextView)findViewById(R.id.resultado_usuario);
         resultado_senha = (TextView)findViewById(R.id.resultado_senha);
@@ -65,6 +59,7 @@ public class tela_perfil extends AppCompatActivity {
             }
         });
     }
+
     Button button_confirmar;
     TextView resultado_usuario;
     TextView resultado_senha;
