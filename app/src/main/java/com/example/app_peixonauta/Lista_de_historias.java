@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.hardware.Sensor;
+import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
@@ -11,10 +12,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
+import android.media.MediaPlayer;
+import android.os.PowerManager;
+import android.os.PowerManager.WakeLock;
 
-public class Lista_de_historias extends AppCompatActivity {
-    SensorManager sensorManager;
-    Sensor sensor;
+public abstract class Lista_de_historias extends AppCompatActivity implements SensorEventListener {
+    private SensorManager sensorManager;
+    private Sensor sensor;
+    private MediaPlayer mediaPlayer;
+    private WakeLock wakeLock;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,12 +29,20 @@ public class Lista_de_historias extends AppCompatActivity {
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE); // Acessar os sensores
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER); // Acessar o sensor de acelerômetro
 
-        // Atraso de resposta do sensor
+        mediaPlayer = MediaPlayer.create(this, R.raw.your_sound_file);
+
         sensorManager.registerListener((SensorEventListener) Lista_de_historias.this, sensor, sensorManager.SENSOR_DELAY_NORMAL);
 
-        btnavancar = (ImageButton) findViewById(R.id.historia1);
-        sair = (ImageButton) findViewById(R.id.sair);
-        consumo = (Button) findViewById(R.id.consumo);
+        PowerManager powerManager = (PowerManager) getSystemService(Lista_de_historias.POWER_SERVICE);
+        if (powerManager != null) {
+            wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "MyApp::MyWakelockTag");
+        }
+
+        ImageButton btnavancar = (ImageButton) findViewById(R.id.historia1);
+        ImageButton sair = (ImageButton) findViewById(R.id.sair);
+        Button consumo = (Button) findViewById(R.id.consumo);
+
+
 
         sair.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +65,6 @@ public class Lista_de_historias extends AppCompatActivity {
 
         });
 
-
         consumo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,10 +74,35 @@ public class Lista_de_historias extends AppCompatActivity {
             }
 
         });
-
-
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        if (sensor != null) {
+            sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        sensorManager.unregisterListener(this);
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        float x = event.values[0];
+
+        if (Math.abs(x) > 18 ) {
+            playSound();
+        }
+    }
+    private void playSound() {
+        if (!mediaPlayer.isPlaying()) {
+            mediaPlayer.start();
+        }
+    }
     Button consumo;
     ImageButton sair;
     ImageButton btnavancar;
