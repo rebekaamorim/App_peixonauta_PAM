@@ -53,6 +53,7 @@ public class tela_perfil extends AppCompatActivity {
                 startActivity(intent);
 
                 Toast.makeText(tela_perfil.this, "Dados Confirmados com Sucesso!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(tela_perfil.this, "Balance o celular para ouvir a música tema ou para pausa-la!", Toast.LENGTH_LONG).show();
             }
         });
     }

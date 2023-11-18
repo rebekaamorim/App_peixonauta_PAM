@@ -13,14 +13,14 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 import android.media.MediaPlayer;
-import android.os.PowerManager;
-import android.os.PowerManager.WakeLock;
 
-public abstract class Lista_de_historias extends AppCompatActivity implements SensorEventListener {
+
+public class Lista_de_historias extends AppCompatActivity implements SensorEventListener {
     private SensorManager sensorManager;
     private Sensor sensor;
-    private MediaPlayer mediaPlayer;
-    private WakeLock wakeLock;
+    private MediaPlayer mediaPlayer; // conseguir usar audio
+    private boolean isPlaying = false; // varivel para não reproducir o audio a principio
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,18 +29,13 @@ public abstract class Lista_de_historias extends AppCompatActivity implements Se
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE); // Acessar os sensores
         sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER); // Acessar o sensor de acelerômetro
 
-        mediaPlayer = MediaPlayer.create(this, R.raw.your_sound_file);
+        mediaPlayer = MediaPlayer.create(Lista_de_historias.this, R.raw.tema);
+        mediaPlayer.setLooping(true); // vai ficar reproduzindo até balançar o dispositivo de novo
 
-        sensorManager.registerListener((SensorEventListener) Lista_de_historias.this, sensor, sensorManager.SENSOR_DELAY_NORMAL);
 
-        PowerManager powerManager = (PowerManager) getSystemService(Lista_de_historias.POWER_SERVICE);
-        if (powerManager != null) {
-            wakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "MyApp::MyWakelockTag");
-        }
-
-        ImageButton btnavancar = (ImageButton) findViewById(R.id.historia1);
-        ImageButton sair = (ImageButton) findViewById(R.id.sair);
-        Button consumo = (Button) findViewById(R.id.consumo);
+        btnavancar = (ImageButton) findViewById(R.id.historia1);
+        sair = (ImageButton) findViewById(R.id.sair);
+        consumo = (Button) findViewById(R.id.consumo);
 
 
 
@@ -77,32 +72,39 @@ public abstract class Lista_de_historias extends AppCompatActivity implements Se
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        if (sensor != null) {
-            sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
+    public void onSensorChanged(SensorEvent event) {
+        float x = event.values[0];
+
+        if (x > 18) { // valor que vai fazer o audio começar, quando o celular balançar
+            if (isPlaying) {
+                mediaPlayer.pause();
+                isPlaying = false;
+            } else {
+                mediaPlayer.start();
+                isPlaying = true;
+            }
         }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();// retorna o audio de onde parou
+        sensorManager.registerListener(Lista_de_historias.this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        sensorManager.unregisterListener(this);
+        sensorManager.unregisterListener(Lista_de_historias.this);
+        mediaPlayer.pause(); // Pausa a música
+        isPlaying = false;
     }
-
-    @Override
-    public void onSensorChanged(SensorEvent event) {
-        float x = event.values[0];
-
-        if (Math.abs(x) > 18 ) {
-            playSound();
-        }
-    }
-    private void playSound() {
-        if (!mediaPlayer.isPlaying()) {
-            mediaPlayer.start();
-        }
-    }
+// a ação do audio vai ser destruida caso o usuario entre em outra tela, por isso não colocamos um método pra isso.
     Button consumo;
     ImageButton sair;
     ImageButton btnavancar;
