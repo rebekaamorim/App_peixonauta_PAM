@@ -53,7 +53,7 @@ A classe "Usuario" e "Consumo" possuem um relacionamento de dependência, pois, 
 
 Obs.: Todos os atributos e métodos são privados. 
 
-### VIDEO DO FUNCIONAMENTO
+### VÍDEO DO FUNCIONAMENTO
 
 
 https://youtu.be/7Zj0XQtEmT4?feature=shared
@@ -61,3 +61,7 @@ https://youtu.be/7Zj0XQtEmT4?feature=shared
 ### VÍDEO DO FUNCIONAMENTO COM O SENSOR DE ACELERÔMETRO COM AÚDIO 1
 
 https://youtube.com/shorts/3qDhf2qoyfs?feature=share
+
+## VÍDEO DO FUNCIONAMENTO COM O SENSOR DE ACELERÔMETRO COM ÁUDIO 2
+
+https://youtu.be/yzwOlJ-PyLQ
