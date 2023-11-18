@@ -55,13 +55,12 @@ Obs.: Todos os atributos e métodos são privados.
 
 ### VÍDEO DO FUNCIONAMENTO
 
-
 https://youtu.be/7Zj0XQtEmT4?feature=shared
 
 ### VÍDEO DO FUNCIONAMENTO COM O SENSOR DE ACELERÔMETRO COM AÚDIO 1
 
 https://youtube.com/shorts/3qDhf2qoyfs?feature=share
 
-## VÍDEO DO FUNCIONAMENTO COM O SENSOR DE ACELERÔMETRO COM ÁUDIO 2
+### VÍDEO DO FUNCIONAMENTO COM O SENSOR DE ACELERÔMETRO COM ÁUDIO 2
 
 https://youtu.be/yzwOlJ-PyLQ
