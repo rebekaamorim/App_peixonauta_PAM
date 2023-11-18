@@ -17,6 +17,9 @@ A tela perfil vai ser utilizada pelos usuários que estão acessando o aplicativ
 #### 3. Tela Menu
 Depois do usuário estar logado, ele terá acesso ao conteúdo do aplicativo, composto pela história do Peixonauta sobre o consumo de água consciente e opção de calcular o consumo de água do usuário ao utilizar o chuveiro ou a torneira.
 
+##### 3.1 Sensor de Acelerômetro com áudio 
+Além disso, na Tela Menu, o usuário terá a possibilidade de utilizar o sensor de acelerômetro com o aúdio/música da abertura do Peixonauta. Dessa forma, o usuário, primeiramente, terá que balançar o celular e, com isso, a música do Peixonauta será ativada e também terá a possibilidade de pausar a música e retormar novamente a música.
+
 #### 4. Tela História
 Após o usuário clicar na opção de historinha da tela de menu, ele será direcionado a tela de história em áudio. Nessa tela, usaremos ImageButton, dessa forma, quando o usuário clicar, emitirá o som de uma parte da história. Além desse Imagebutton, terá 3 botões, com a funcionalidade de voltar a tela anterior, pausar o áudio, e seguir para a próxima tela, respectivamente.
 
